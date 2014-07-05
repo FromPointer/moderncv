@@ -1,0 +1,208 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{oldstyle}                           % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{grey}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+% \usepackage{CJK}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+\usepackage[slantfont,boldfont]{xeCJK}
+\usepackage{xcolor}
+\setCJKmainfont{SimSun}
+\setCJKfamilyfont{song}{SimSun}
+
+% \usepackage[BoldFont,SlantFont,CJKsetspaces,CJKchecksingle]{xeCJK}
+% \textheight=9.0in
+%\setCJKmainfont[BoldFont=SimHei]{SimSun}
+%\setCJKmonofont{SimSun}% 设置缺省中文字体
+%\parindent 2em   %段首缩进
+%\pagestyle{empty}
+%\raggedbottom
+%\raggedright
+%\setlength{\tabcolsep}{0in}
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+
+% personal data
+\name{阮}{一峰}
+\title{互联网开发者}                               % optional, remove / comment the line if not wanted
+\address{上海}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{13818820270}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{yifeng.ruan@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{www.ruanyifeng.com}                         % optional, remove / comment the line if not wanted
+\github{github.com/ruanyf}
+\twitter{twitter.com/ruanyf}
+\extrainfo{weibo.com/ruanyf}                % optional, remove / comment the line if not wanted
+\photo[80pt][0pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\quote{Stay Focused, Keep Shipping. Build Early, Build Always.}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{工作意愿}
+\cvlistitem{目前，我比较感兴趣的是使用Node.js语言、Express|Backbone.js框架、PostgreSQL|MongoDB数据库、Redis|RabbitMQ消息队列、Foundation CSS框架等技术，完成一个以Restful API作为通讯机制的网站。}
+\cvlistitem{如果有这样的项目，且工作地点在上海或周边地区，我愿意参加。}
+
+\section{技能}
+\cvlistitem{过去一直以前端开发为主，熟练掌握JavaScript语言和CSS。}
+\cvlistitem{目前，主要精力转向后端，以学习Node.js、Linux和数据库技术为主。}
+\cvlistitem{开发语言目前为JavaScript，偶尔写一些Python和Bash脚本。曾经写过几年PHP，如今已经完全放弃该语言。}
+\cvlistitem{英语的听说读写都是高级水平，有用英语授课经历。}
+
+%\section{技能}
+%\cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+%\cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+%\cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+
+\section{个人项目}
+\cventry{}{ECMAScript 6入门}{http://es6.ruanyifeng.com}{}{}{Github stars 500+。本项目力争覆盖ES6与ES5的所有不同之处，对涉及的语法知识给予详细介绍，并给出大量简洁易懂的示例代码。}  % arguments 3 to 6 can be left empty
+\cventry{}{JavaScript标准参考手册}{http://javascript.ruanyifeng.com}{}{}{Github stars 500+。本项目为ECMAScript
+5及其外围API的全面解读和参考手册。}
+\cventry{}{个人博客}{http://www.ruanyifeng.com}{}{}{访问量过1000万，有一定影响力，上面有我写的很多技术文章。}
+\cventry{}{Google日历简易版}{http://calendar.ruanyifeng.com}{}{}{使用Google Calendar的API，写的一个互联网用户界面，早期项目，比较简陋。}
+
+\section{出版物}
+\cventry{}{《软件随想录》}{译著}{人民邮电出版社}{\textit{2009}}{本书为StackOverflow创始人Joel Spolsky博客文集的中文版。}  % arguments 3 to 6 can be left empty
+\cventry{}{《黑客与画家》}{译著}{人民邮电出版社}{\textit{2011}}{本书为Y Combinator创始人Paul Graham文集的中文版，出版后在国内影响很大。}
+\cventry{}{《如何变得有思想？》}{专著}{人民邮电出版社}{\textit{2014（即将上市）}}{本书为我的博客文章的结集，共100多篇，20多万字。}
+\cventry{}{《ECMAScript 6入门》}{专著}{电子工业出版社}{\textit{2014（即将上市）}}{本书为第一本介绍ECMAScript 6的中文专著。}
+
+\section{经历}
+\cventry{}{1976年}{出生于上海}{}{}{}  % arguments 3 to 6 can be left empty
+\cventry{}{1994年-1998年}{上海财经大学}{}{}{获得经济学学士}
+\cventry{}{1999年-2001年}{上海社科院}{}{}{获得经济学硕士}
+\cventry{}{2001年-2004年}{上海永嘉投机管理有限公司}{}{}{撰写债券研究报告，有证券从业资格}
+\cventry{}{2004年-2008年}{上海财经大学}{}{}{获得经济学博士}
+\cventry{}{2008年-至今}{上海金融学院}{}{}{国际贸易系讲师，为本科生和留学生讲授财经类和电子商务课程}
+
+\section{}
+注：本文档使用ModernCV制作。
+
+%\section{Education}
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}  % arguments 3 to 6 can be left empty
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+
+%\section{Master thesis}
+%\cvitem{title}{\emph{Title}}
+%\cvitem{supervisors}{Supervisors}
+%\cvitem{description}{Short thesis abstract}
+
+%\section{Experience}
+%\subsection{Vocational}
+%\cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than 1--2 lines.\newline{}%
+%Detailed achievements:%
+%\begin{itemize}%
+%\item Achievement 1;
+%\item Achievement 2, with sub-achievements:
+%  \begin{itemize}%
+%  \item Sub-achievement (a);
+%  \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+%    \begin{itemize}
+%    \item Sub-sub-achievement i;
+%    \item Sub-sub-achievement ii;
+%    \item Sub-sub-achievement iii;
+%    \end{itemize}
+%  \item Sub-achievement (c);
+%  \end{itemize}
+%\item Achievement 3.
+%\end{itemize}}
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}
+%\subsection{Miscellaneous}
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description}
+
+%\section{Languages}
+%\cvitemwithcomment{Language 1}{Skill level}{Comment}
+%\cvitemwithcomment{Language 2}{Skill level}{Comment}
+%\cvitemwithcomment{Language 3}{Skill level}{Comment}
+
+%\section{Interests}
+%\cvitem{hobby 1}{Description}
+%\cvitem{hobby 2}{Description}
+%\cvitem{hobby 3}{Description}
+
+%\section{Extra 2}
+%\cvlistdoubleitem{Item 1}{Item 4}
+%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+%\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+
+%\section{References}
+%\begin{cvcolumns}
+%  \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+%  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+%  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+%\end{cvcolumns}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%\clearpage
+%-----       letter       ---------------------------------------------------------
+% recipient data
+%\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+%\date{January 01, 1984}
+%\opening{Dear Sir or Madam,}
+%\closing{Yours faithfully,}
+%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+%\makelettertitle
+
+%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+
+%Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+
+%Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+
+%Albert Einstein discovered that $e=mc^2$ in 1905.
+
+%\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
+
+%\makeletterclosing
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+%% end of file `template.tex'.
